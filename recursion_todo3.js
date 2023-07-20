@@ -51,4 +51,17 @@ function rGCF(num1, num2) {
 
 console.log(rGCF(123456, 987654));
 
+// WRONG CASE
+// function rGCF(num1, num2) {
+//     if (num1 === num2) {
+//         return num1; // MY Base case
+//     } else if (num1 > num2) {
+//         return rGCF(num1 - num2, num2);
+//     } else {
+//         return rGCF(num1, num2 - num1); 
+//     }
+// }
 
+
+
+// console.log(rGCF(123456, 987654)); // Output: 6 (GCF of 123456 and 987654 is 6)
