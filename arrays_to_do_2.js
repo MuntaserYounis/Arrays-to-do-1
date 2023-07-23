@@ -61,13 +61,13 @@
 // }
 
 
-// const my_array = [1, 2, 3, 4, 5];
+// const my_array2 = [1, 2, 3, 4, 5];
 
-// rotation(my_array, 1);
-// console.log(my_array); 
+// rotation(my_array2, 1);
+// console.log(my_array2); 
 
-// rotation(my_array, -2);
-// console.log(my_array);
+// rotation(my_array2, -2);
+// console.log(my_array2);
 
 // Filter Range
 // Alan is good at breaking secret codes. One method is to eliminate values that lie outside 
@@ -75,29 +75,29 @@
 // retain only the array values between min and max. Work in-place: 
 // return the array you are given, with values in original order. No built-in array functions.
 
-// function filtering(arr, min, max) {
-//     let writeIndex = 0;
+function filtering(arr, min, max) {
+    let writeIndex = 0;
     
-//     for (let i = 0; i < arr.length; i++) {
-//     const currentValue = arr[i];
+    for (let i = 0; i < arr.length; i++) {
+    const currentValue = arr[i];
     
-//     if (currentValue >= min && currentValue <= max) {
-//         if (i !== writeIndex) {
-//         arr[writeIndex] = currentValue;
-//         }
-//         writeIndex++;
-//     }
-//     }
+    if (currentValue >= min && currentValue <= max) {
+        if (i !== writeIndex) {
+        arr[writeIndex] = currentValue;
+        }
+        writeIndex++;
+    }
+    }
     
-//     arr.length = writeIndex; 
+    arr.length = writeIndex; 
     
-//     return arr;
-// }
+    return arr;
+}
 
-// const myArray = [5, 10, 15, 20, 25];
+const myArray = [5, 10, 15, 20, 25];
 
-// filtering(myArray, 10, 20);
-// console.log(myArray);
+filtering(myArray, 10, 20);
+console.log(myArray);
 
 // // Concat
 // // Replicate JavaScript's concat(). Create a standalone function that accepts two arrays. 
